@@ -1,0 +1,38 @@
+:root {
+  --bgk-buttom: #f0f0f0;
+  --border-button: solid 1px #888 !important;
+  --bgk-click: #ccc;
+  --bgk-operation: #fa8231;
+  --text-operation: #FFF;
+  --bgk-operation-active: #fa8231cc;
+}
+
+.button {
+  font-size: 1.4em;
+  background-color: var(--bgk-buttom);
+  border: none;
+  border-right: var(--border-button);
+  border-bottom: var(--border-button);
+  outline: none;
+}
+
+.button:active {
+  background-color: var(--bgk-click);
+}
+
+.button.double {
+  grid-column: span 2;
+}
+
+.button.triple{
+  grid-column: span 3;
+}
+
+.button.operation {
+  background-color: var(--bgk-operation);
+  color: var(--text-operation);
+}
+
+.button.operation:active {
+  background-color: var(--bgk-operation-active);
+}
