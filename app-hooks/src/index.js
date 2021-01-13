@@ -4,10 +4,14 @@ import React from "react";
 import App from "./views/App";
 import reportWebVitals from "./reportWebVitals";
 
+import DataContext from "./data/DataContext";
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <DataContext.Provider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </DataContext.Provider>,
   document.getElementById("root")
 );
 
