@@ -5,6 +5,6 @@ export const state = {
   text: "Context API...",
 };
 
-const DataContext = React.createContext(state);
+const DataContext = React.createContext(null);
 
 export default DataContext;
